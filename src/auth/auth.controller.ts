@@ -39,7 +39,7 @@ export class AuthController {
     console.log(token)
     return this.authService.confirmPassword(token, password, newPassword);
   }
-kjk
+
   @Get('verify-email')
   async verifyAndConfirmEmail(@Query() body) {
     const { token } = body;
